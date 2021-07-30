@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     
+    
 }
 @font-face{
     font-family: Open Sans Regular, Open Sans Bold, Arial, sans-serif;
@@ -12,9 +13,14 @@
     font-weight: 400;  
     font-style: normal;
 }
-    
+  /* body {
+    position: relative;
+    background-color: #ffffff; 
+    z-index: -1; 
+  }   */
 .banner {
     background-image: url("images/banner-bg.jpg");
+    
     position: relative;
     /* background-position: center; */
     background-repeat: no-repeat;
@@ -39,10 +45,9 @@
     position: relative;
     display: flex; 
     justify-content: space-between;
-    /* flex-wrap: wrap; */
     z-index: 2;
     margin: 0 auto;  
-    max-width: 1200px;
+    max-width: 1170px;
     
 }
 .header-logo {
@@ -59,13 +64,13 @@
     display: flex;
     align-items: center; 
     list-style: none;
-    padding: 0;
+    padding-left: 0;
     font-family: Open Sans Regula, Arial, sans-serif ;
     font-size: 13px;
     text-transform: uppercase;
 }
-.list-li{
-    align-items: center;
+ .list-li:nth-of-type(n+2){ 
+    margin-left: 32px;
 }
 .header-menu-link {
     display: inline-block;
@@ -73,10 +78,7 @@
     text-decoration: none;
     color: #ffffff; 
 }
- .header-menu-link:last-of-type{
-    margin-left: 33px;
-
-} 
+ 
 .header-menu-link:hover{
     color: #fff;
     font-weight: 600;
@@ -98,29 +100,36 @@
 /* основная часть */
 
 .main-field {
-    display: flex;
-    justify-content: space-around;
+       
     padding-top: 64px;  
     width: 100%;
     
+    
 }
-
+.site-field{
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 1170px;
+    
+}
 .post-list {
-    flex-basis: 67%;
-    /* padding-right: 120px;  */
-     max-width: 780px;  
-      
-    /* justify-content: space-between; */
-    /* max-width: 780px; */
+    
+    max-width: 778px; 
+    
 }
 
 .item  {
     display: flex;
     margin-bottom: 57px;
+    
     /* padding-right: 90px;   */
     /* border: 2px solid green; */
 } 
-
+.images-post{
+    background-color: #eff6f1;
+}
 
 .item-text {
     margin-left: 30px; 
@@ -184,7 +193,7 @@
     /* margin-bottom: 67px; */
     font-family: Open Sans Regular, Arial, sans-serif;
     font-size: 15px;
-    line-height: 22px;
+    line-height: 1.5rem;
 }
 
 .text>p{
@@ -195,7 +204,8 @@
   
 .side-bar {
     max-width: 272px;
-    flex-basis: 23%;
+     /* flex-basis: 31%;  */
+    
    
 }  
 
@@ -226,6 +236,9 @@
     
 } 
 
+.images-latest{
+    background-color: #f4f7f6;
+} 
 .post-date{
     margin-left: 19px;
     
@@ -247,7 +260,7 @@
     text-decoration: none;
     font-family: Open Sans Bold, Arial, sans-serif;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.3rem;
     color: #0f0d0e;  
     text-transform:uppercase;
     
