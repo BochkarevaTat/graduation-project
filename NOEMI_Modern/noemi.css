@@ -6,12 +6,18 @@
     
 }
 @font-face{
-    font-family: Open Sans Regular, Open Sans Bold, Arial, sans-serif;
+    font-family: Open Sans Regular;
     font-size: 14px;
-    src: url(./fonts/OpenSans-Regular.woff);
-    /* src: url(./fonts/OpenSans-Bold.woff); */
-    font-weight: 400;  
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+    font-weight: bold;  
     font-style: normal;
+
+    @font-face {
+        font-family: 'OpenSans-Bold';
+        src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+        font-weight: bold;
+        font-style: normal;
+        }
 }
   /* body {
     position: relative;
@@ -20,9 +26,9 @@
   }   */
 .banner {
     background-image: url("images/banner-bg.jpg");
-    
     position: relative;
-    /* background-position: center; */
+    /* box-sizing: border-box;  */
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover; 
     padding: 27px 0 132px ;
@@ -48,11 +54,13 @@
     z-index: 2;
     margin: 0 auto;  
     max-width: 1170px;
+    margin-bottom: 110px;
     
 }
 .header-logo {
     display: flex;
     align-items: center;   
+    
     
 }
 
@@ -73,7 +81,7 @@
     margin-left: 32px;
 }
 .header-menu-link {
-    display: inline-block;
+    display: inline;
     align-items: center;
     text-decoration: none;
     color: #ffffff; 
@@ -81,11 +89,11 @@
  
 .header-menu-link:hover{
     color: #fff;
-    font-weight: 600;
+    border-bottom: 2px solid #ffffff;
 }
 .header-title{
     display: flex;  
-    justify-content: center;
+    /* justify-content: center; */
     position: relative; 
     z-index: 2;
     font-family: Open Sans Bold, Arial, sans-serif ;
@@ -94,7 +102,9 @@
     text-align:center; 
     text-transform:uppercase;
     color: #ffffff;
-    margin-top: 110px;
+    margin: 0 auto;
+    max-width: 670px;
+    
 }
    
 /* основная часть */
@@ -254,10 +264,7 @@
     
 }
     
-/* .post-list{
-   
-    margin-bottom: 32px;
-} */
+
 .bar-title{
     text-decoration: none;
     font-family: Open Sans Bold, Arial, sans-serif;
@@ -426,9 +433,15 @@
 /* footer */
 
 .footer {
-padding: 10px 245px 24px 245px;
+    position: relative;
+    padding: 10px 0 24px;
+    width: 100%; 
 }
-
+.footer-container{
+    
+    max-width: 1170px;
+    margin: 0 auto;
+}
 .articles-socials {
     background-color: #f4f7f6;
     text-align: center;
